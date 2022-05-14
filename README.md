@@ -49,13 +49,22 @@ $ pip list
 $ pip freeze
 ```
 
-Instalar [Flask](https://flask.palletsprojects.com/):
+##### instalar todas las dependencias requeridas:
+```
+$ pip install -r ./requirements.txt
+```
+
+#### crear el archivo de requerimentos:
+```
+$ pip freeze > requirements.txt
+```
+
+## Instalar [Flask](https://flask.palletsprojects.com/):
 ```
 $ pip install flask
 ```
 
-
-Instalar [Django](https://www.djangoproject.com/):
+## Instalar [Django](https://www.djangoproject.com/):
 ```
 pip install Django==<version>
 ```
