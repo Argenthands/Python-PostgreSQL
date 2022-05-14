@@ -1,57 +1,66 @@
 # Python-PostgreSQL
-proyecto para practicar conección de Python con PostgreSQL
+<em>proyecto para practicar conección de Python con PostgreSQL</em>
 
 ## Python3 Virtualenv Setup
 
-##### Requirements
+### Requirements
 * Python 3
 * Pip 3
 
+#### Instalar [Python3](https://www.python.org/doc/)
 ```bash
 $ brew install python3
 ```
+*pip se instala por defecto con python
 
-Pip3 is installed with Python3
-
-##### Upgrades
-
-upgrade python:
+#### Actualizar Python:
 ```bash
 $ brew update && brew upgrade python
 ```
 
-upgrade pip:
+#### Actualizar pip:
 ```bash
-$ python3 -m pip install -upgrade pip
+$ python3 -m pip install --upgrade pip
 ```
 
-
-##### Installation
-To install virtualenv via pip run:
+#### Instalar [Virtualenv](https://virtualenv.pypa.io/en/stable/):
 ```bash
 $ pip install virtualenv
 ```
 
-##### Usage
-Creation of virtualenv:
+##### Creation of virtualenv:
 ```bash
 $ virtualenv -p python3 <desired-path>
 ```
 
-Activate the virtualenv:
+##### Activate the virtualenv:
 ```bash
 $ source <desired-path>/bin/activate
 ```
 
-Deactivate the virtualenv:
+##### Deactivate the virtualenv:
 ```bash
 $ deactivate
 ```
 
-see the libraries:
+##### Ver las libraries instaladas:
 ```
 $ pip list
 $ pip freeze
 ```
 
-[About Virtualenv](https://virtualenv.pypa.io/en/stable/)
+Instalar [Flask](https://flask.palletsprojects.com/):
+```
+$ pip install flask
+```
+
+
+Instalar [Django](https://www.djangoproject.com/):
+```
+pip install Django==<version>
+```
+
+
+[MacOs Virtualenv](https://sourabhbajaj.com/mac-setup/Python/virtualenv.html)
+
+[Linux Virtualenv](https://www.lunium.com/blog/entornos-virtuales-en-python-3-con-virtualenv-en-linux/#:~:text=Virtualenv%20es%20una%20herramienta%20para,los%20diferentes%20proyectos%20que%20tengamos.)
