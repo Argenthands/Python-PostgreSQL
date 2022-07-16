@@ -8,19 +8,30 @@
 * Pip 3
 
 #### Instalar [Python3](https://www.python.org/doc/)
-```bash
-$ brew install python3
-```
+- Linux:
+    
+    ```bash
+    $ brew install python3
+    ```
+- Windows:
+    ```powershell
+    winget install -e --id Python
+    ```
 *pip se instala por defecto con python
 
 #### Actualizar Python:
-```bash
-$ brew update && brew upgrade python
-```
+- Linux:
+    ```bash
+    $ brew update && brew upgrade python
+    ```
+- Windows: ?
+    ```powershell
+    winget update -e --id Python
+    ```
 
 #### Actualizar pip:
 ```bash
-$ python3 -m pip install --upgrade pip
+$ python -m pip install --upgrade pip
 ```
 
 #### Instalar [Virtualenv](https://virtualenv.pypa.io/en/stable/):
@@ -29,15 +40,23 @@ $ pip install virtualenv
 ```
 
 ##### Creation of virtualenv:
-```bash
-$ virtualenv -p python3 <desired-path>
+- Linux:
+    ```bash
+    $ virtualenv -p python <desired-path>
 ```
-
+- Windows:
+    ```powershell
+    $ python -m venv <desired-path>
+    ```
 ##### Activate the virtualenv:
-```bash
-$ source <desired-path>/bin/activate
-```
-
+- Linux:
+    ```bash
+    $ source <desired-path>/bin/activate
+    ```
+- Windows:
+    ```powershell
+    /<desired-path>/Scripts/activate
+    ```
 ##### Deactivate the virtualenv:
 ```bash
 $ deactivate
